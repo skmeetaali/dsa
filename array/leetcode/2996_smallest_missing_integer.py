@@ -9,7 +9,6 @@ def smi(array):
         if array[i] == array[i - 1] + 1:
             pref_len += 1
             pref_sum += array[i]
-            print(pref_sum, "whyyy")
             if pref_len > max_pref_len:
                 max_pref_len = pref_len
                 max_pref_sum = pref_sum
@@ -17,15 +16,12 @@ def smi(array):
             break
             
     if max_pref_sum not in array:
-        print("hey")
-        print(max_pref_sum)
         return max_pref_sum
     else:
         while True:
             max_pref_sum += 1
             if max_pref_sum not in array:
-                print("hi")
-                print(max_pref_sum)
+
                 return max_pref_sum
             else:
                 continue
