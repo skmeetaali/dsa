@@ -15,11 +15,11 @@ def longest_prefix(arr1, arr2):
                 if num1[k] == num2[k]:
                     pref_len += 1
                     if max_prefix_len < pref_len:
-                        print("else", max_prefix_len)
                         max_prefix_len = pref_len
                 else:
                     pref_len = 0
                     break
+            pref_len = 0
 
                     
     return max_prefix_len
