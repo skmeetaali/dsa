@@ -2,7 +2,6 @@ def con_dup(arr, win):
     if len(arr) <= win:
         for j in range(len(arr) - 1):
             for k in range(j + 1, len(arr)):
-                print(k, "k")
                 if arr[j] == arr[k]:
                     return True
     else:
