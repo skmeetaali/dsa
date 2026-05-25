@@ -15,6 +15,8 @@ def first_index(haystack, needle):
                     break
     print("here at last")
     return -1
+
+
 haystack = "sadbutsad"
 needle = "sad"
 print(first_index(haystack, needle))
