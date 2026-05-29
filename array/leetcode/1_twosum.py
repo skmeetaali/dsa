@@ -1,6 +1,5 @@
 class TwoSum(object):
-
-        
+      
     def hash_func(self, key):
         return key % self._bucket
     
@@ -57,9 +56,7 @@ class TwoSum(object):
                 index1 = i
                 
             if nums[i] == key2 and i != index1:
-                index2 = i
-                
-                
+                index2 = i              
         return index1, index2
     
     
